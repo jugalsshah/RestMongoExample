@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache name="EmployeeCache">
+ 
+      <defaultCache
+          maxElementsInMemory="10000"
+          eternal="false"
+          timeToIdleSeconds="120000"
+          timeToLiveSeconds="120000"
+          overflowToDisk="true"
+          diskSpoolBufferSizeMB="30"
+          maxElementsOnDisk="10000000"
+          diskPersistent="false"
+          diskExpiryThreadIntervalSeconds="120"
+          memoryStoreEvictionPolicy="LRU"/>
+     
+      <cache name="users"
+             maxElementsInMemory="100"
+             maxElementsOnDisk="0"
+             eternal="false"
+             timeToIdleSeconds="120"
+             timeToLiveSeconds="0"
+             memoryStoreEvictionPolicy="LFU">
+      </cache>
+     
+</ehcache>
